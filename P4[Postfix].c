@@ -85,9 +85,4 @@ void infix_to_postfix() {
 			default: postfix[j++] = symb;
 		}
 	}
-	while(top>0) {
-		temp = pop();
-		postfix[j++] = temp;
-	}
-	postfix[j] = '\0';
 }
